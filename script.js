@@ -1,16 +1,16 @@
 let menu = document.querySelector('#menu-btn')
-let navbar =document.querySelector('.navbar')
+let navbar = document.querySelector('.navbar')
 
 
 
-menu.onclick = () =>{
+menu.onclick = () => {
     menu.classList.toggle('fa-times')
     navbar.classList.toggle('active')
 }
 
 
 
-window.onscroll = () =>{
+window.onscroll = () => {
     menu.classList.remove('fas-times')
     navbar.classList.remove('active')
 
@@ -18,16 +18,16 @@ window.onscroll = () =>{
 
 
 
-var i=0,text;
-text = 'submit your idea' 
+var i = 0, text;
+text = 'submit your idea'
 
 function typing() {
-    if (i<text.length){
+    if (i < text.length) {
         document.getElementById("text").innerHTML += text.charAt(i);
         i++;
-        setTimeout(typing,50);
+        setTimeout(typing, 130);
     }
-    
+
 }
 
 typing();
